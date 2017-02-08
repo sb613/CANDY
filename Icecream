@@ -16,12 +16,11 @@ minetest.register_craftitem("taco:taco", {
 })
 
 minetest.register_craft({
-        output = "taco 3",
+        output = "icecream 3",
         recipe = {
-                {'', 'farming:wheat', ''},
-                {'farming:wheat', 'default:dirt', 'farming:carrot'},
+                {'bucket:milk', 'bucket:milk', 'bucket:milk'},
+                {'farming:wheat', 'default:torch', 'farming:wheat'},
                 {'', 'farming:wheat', ''},
         }
-})--To craft three tacos you need 3 wheat and 1 carrot.
-
+})--To craft three icecreams you need three wheat, one torch and three milk buckets.
 print("mod taco Loaded!")
