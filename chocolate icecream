@@ -19,8 +19,8 @@ minetest.register_craft({
         output = "icecream 3",
         recipe = {
                 {'', '', ''},
-                {'', 'default:torch', ''},
+                {'', 'farming:cocoa_beans', ''},
                 {'', 'icecream:icecream', ''},
         }
-})--To craft one chocolate icecream you need one icecream and one cocoabean.
+})--To craft one chocolate icecream you need one icecream and one cocoabean pod.
 print("mod icecream Loaded!")
