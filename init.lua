@@ -17,9 +17,9 @@ minetest.register_craftitem("icecream:icecream", {
 minetest.register_craft({
         output = "icecream 3",
         recipe = {
-                {'bucket:milk', 'bucket:milk', 'bucket:milk'},
+                {'mobs:cheese', 'mobs:cheese', 'mobs:cheese'},
                 {'farming:wheat', 'default:torch', 'farming:wheat'},
                 {'', 'farming:wheat', ''},
         }
-})--To craft three icecreams you need three wheat, one torch and three milk buckets.
+})--To craft three icecreams you need three wheat, one torch and three pieces of cheese.
 print("mod icecream Loaded!")
