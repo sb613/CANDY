@@ -7,7 +7,7 @@
 --})
 minetest.register_craftitem("icecream:icecream_chocolate", {
         description = ("Chocolate Icecream"),
-        inventory_image = "icecream.png",
+        inventory_image = "images (5).jpg",
         on_use = minetest.item_eat(4)
         --minetest.after(3, function(params)
         --              minetest.chat_send_all("Mmmm!  Chocolatey!!")
