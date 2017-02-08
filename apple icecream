@@ -1,0 +1,26 @@
+
+--This mod adds an icecream cone to minetest
+
+--minetest.after(5,
+--      function(params)
+--              minetest.chat_send_all("Don't Forget To Have an icecream cone!")
+--})
+minetest.register_craftitem("icecream:icecream_chocolate", {
+        description = ("Chocolate Icecream"),
+        inventory_image = "images (5).jpg",
+        on_use = minetest.item_eat(4)
+        --minetest.after(3, function(params)
+        --              minetest.chat_send_all("Tasty!  Don't you just love icecream?!")
+        --      end
+        --)
+})
+
+minetest.register_craft({
+        output = "apple icecream 1",
+        recipe = {
+                {'', '', ''},
+                {'', 'default:apple', ''},
+                {'', 'icecream:icecream', ''},
+        }
+})--To craft one apple icecream you need one icecream and one apple.
+print("mod icecream Loaded!")
