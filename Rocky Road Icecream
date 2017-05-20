@@ -1,0 +1,26 @@
+--Rocky Road Icecream!  Sound Delicious until you find out it's actually made with rocks in minetest.
+--This mod adds a rocky road flavoured icecream cone to minetest
+
+--minetest.after(5,
+--      function(params)
+--              minetest.chat_send_all("Don't Forget To Have an icecream cone!")
+--})
+minetest.register_craftitem("icecream:Rocky Road Icecream", {
+        --description = S("Icecream cone"),
+        inventory_image = "icecream.png",
+        on_use = minetest.item_eat(4)
+        --minetest.after(3, function(params)
+        --              minetest.chat_send_all("Wasn't that delicous?!")
+        --      end
+        --)
+})
+
+minetest.register_craft({
+        output = "Rocky Road Icecream 3",
+        recipe = {
+                {'mobs:cheese', 'mobs:cheese', 'mobs:cheese'},
+                {'farming:wheat', 'default:torch', 'farming:wheat'},
+                {'default:cobblestone', 'farming:wheat', 'default:cobblestone'},
+        }
+})--To craft three Rocky Road icecreams you need three wheat, one torch, two cobblestone and three pieces of cheese.
+print("mod Rocky Road Icecream Loaded!")
