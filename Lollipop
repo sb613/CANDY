@@ -1,1 +1,26 @@
---Lollipop! 
+--Lollipop! 🍭
+--This mod adds a lollipop to  minetest!
+
+--minetest.after(5,
+--      function(params)
+--              minetest.chat_send_all("Don't Forget To Have a Lollipop™!")
+--})
+minetest.register_craftitem("CANDY:lollipop", {
+        --description = S("Lollipop"),
+        inventory_image = "icecream.png",
+        on_use = minetest.item_eat(2)
+        --minetest.after(3, function(params)
+        --              minetest.chat_send_all("Wasn't that delicous?!")
+        --      end
+        --)
+})
+
+minetest.register_craft({
+        output = "lollipop 5",
+        recipe = {
+                {'', '', ''},
+                {'', 'default:torch', ''},
+                {'', 'farming:wheat', ''},
+        }
+})--To craft five lollipops you will need one wheat, one torch, and____.
+print("mod lollipop Loaded!")
